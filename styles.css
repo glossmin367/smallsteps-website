@@ -1,0 +1,167 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F1FAEE; /* Cream background */
+  color: #1D3557; /* Deep blue text */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #1D3557; /* Deep Blue */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;   /* Aligns logo and text vertically */
+  justify-content: center; /* Centers them horizontally */
+}
+
+.logo {
+  height: 60px;   /* Default logo size */
+  width: auto;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  color: #fff;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #A8DADC; /* Light Blue hover */
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #2A9D8F; /* Teal Green headings */
+  margin-bottom: 20px;
+}
+
+/* Projects */
+#projects article {
+  background-color: #fff;
+  border: 1px solid #A8DADC;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+#projects img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Contact Form */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #A8DADC;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #2A9D8F; /* Teal Green */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #A8DADC; /* Light Blue hover */
+  color: #1D3557;
+}
+
+/* Footer */
+footer {
+  background-color: #1D3557;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #A8DADC;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #2A9D8F;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    height: 45px; /* Smaller logo on tablets */
+    margin-right: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em; /* Slightly smaller text */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column; /* Stack logo above text */
+  }
+
+  .logo {
+    height: 40px; /* Even smaller logo on phones */
+    margin: 0 0 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.2em; /* Compact text size */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav links vertically */
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+}
